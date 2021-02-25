@@ -33,20 +33,11 @@
 
 .movie_details_data_wrapper{
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-  align-items: flex-start;
-  border: 1px solid lightgrey;
-  width: 50%;
-  padding: 3rem;
-  margin: 2rem
-=======
   width: 50%;
   justify-content: space-around;
   align-items: flex-start;
   padding: 3rem;
   margin: 2rem;
->>>>>>> 81ffd799d91d50a062928292d632af1667f2b95f
 }
 .movie_details_data_image{
   margin-bottom: 20px;
