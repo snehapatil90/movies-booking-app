@@ -36,33 +36,37 @@ class MovieDetails extends Component {
       <div>
         {movieDetails && (
           <div className="movie_details_data_wrapper">
-            <img
-              className="movie_details_data_image"
-              src={`https://image.tmdb.org/t/p/w200/${movieDetails.poster_path}`}
-              alt="poster"
-            />
-            <h3 className="movie_details_data_header">
-              Title: {movieDetails.title}
-            </h3>
-            <p className="movie_details_data_text">
-              Release Date: {movieDetails.release_date}
-            </p>
-            <p className="movie_details_data_text">
-              Status: {movieDetails.status}
-            </p>
-            {movieDetails.genres && (
-              <table>
-                <tbody>
-                  {movieDetails.genres.map((data, i) => {
-                    return (
-                      <tr key={i}>
-                        <td>Genres: {data.name}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            )}
+            <div>
+              <img
+                className="movie_details_data_image"
+                src={`https://image.tmdb.org/t/p/w200/${movieDetails.poster_path}`}
+                alt="poster"
+              />
+            </div>
+            <div>
+              <h3 className="movie_details_data_header">
+                Title: {movieDetails.title}
+              </h3>
+              <p className="movie_details_data_text">
+                Release Date: {movieDetails.release_date}
+              </p>
+              <p className="movie_details_data_text">
+                Status: {movieDetails.status}
+              </p>
+              {movieDetails.genres && (
+                <table>
+                  <tbody>
+                    {movieDetails.genres.map((data, i) => {
+                      return (
+                        <tr key={i}>
+                          <td>Genres: {data.name}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              )}
+            </div>
           </div>
         )}
       </div>
